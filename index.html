@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <meta name="author" content="Violeta Petrović" />
+    <meta
+      name="description"
+      content="App for fetching images from the Unsplash using the [Unsplash API]"
+    />
+    <meta name="keywords" content="html, css,javascript, api, responsive" />
+
+    <!-- IOS compatibility -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="ImageApp" />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      href="apple-icon-144x144.png"
+    />
+    <!--Android compatibility-->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="aplication-name" content="ImageApp" />
+    <link rel="icon" type="image/png" href="android-icon-192x192.png" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png" />
+
+    <script
+      src="https://kit.fontawesome.com/e2e5f5e8b9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>ImageApp</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div>
+          <h1>Images App</h1>
+          <button id="switchGridBtn" type="button" class="switch-grid-btn">
+            <i class="fas fa-border-all grid-1"></i>
+            <i class="fas fa-grip-lines grid-2"></i>
+          </button>
+        </div>
+      </header>
+      <div class="image-container mt-80px" id="image-container"></div>
+      <div class="loader">
+        <img src="goku.gif" alt="loading..." />
+      </div>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-body">
+        <div class="modal-img-container">
+          <img id="modalImg" src="goku.gif" alt="loading..." />
+          <i class="fas fa-chevron-left strelica leva" id="leva-strelica"></i>
+          <i
+            class="fas fa-chevron-right strelica desna"
+            id="desna-strelica"
+          ></i>
+          <i class="fas fa-times close-btn" id="close-btn"></i>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
