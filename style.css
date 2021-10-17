@@ -190,7 +190,7 @@ h1 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 70px;
+  width: 90px;
 }
 
 .footer-wrapper .info .photo-link {
@@ -337,10 +337,17 @@ hr {
   }
 
   .single-image-wrapper {
-    flex: 1 0 30%;
-    max-width: 30%;
+    flex: 1 0 48%;
+    max-width: 48%;
     padding-top: 40%;
     position: relative;
     margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .single-image-wrapper {
+    flex: 1 0 30%;
+    max-width: 30%;
   }
 }
