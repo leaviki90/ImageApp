@@ -137,7 +137,7 @@ async function getPhotos() {
 
     content.innerHTML = `<div class="single-image" data-id="${photo.id}">
     <figure class="img-figure">
-        <img src="${photo.urls.thumb}" alt="${
+        <img src="${photo.urls.small}" alt="${
       photo.alt_description ? photo.alt_description : "this photo has no alt"
     }" class="images" />
     </figure>
@@ -165,7 +165,8 @@ async function getPhotos() {
             ${linkPortfolio}
             </div>
             <div class="profile-extra__social">
-            ${insta} ${twitter} ${paypal}
+            ${insta} <br>
+            ${twitter} ${paypal}
             </div>
         </div>
     </div>
