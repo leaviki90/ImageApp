@@ -21,8 +21,8 @@ body {
 }
 header {
   background: #11998e;
-  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
-  background: linear-gradient(to right, #38ef7d, #11998e);
+  background: -webkit-linear-gradient(to left, #38ef7d, #11998e);
+  background: linear-gradient(to left, #38ef7d, #11998e);
   padding: 15px;
   position: fixed;
   top: 0;
