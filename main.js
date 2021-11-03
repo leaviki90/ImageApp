@@ -31,15 +31,12 @@ imageContainer.addEventListener("click", (e) => {
 
   // GET CLICKED PHOTO ID
   const photoId = e.target.closest(".single-image").getAttribute("data-id");
-  console.log(photoId);
 
   // EXTRACT OBJECT FROM allPhotos ARRAY USING CLICKED PHOTO ID
   const currentPhoto = allPhotos.find((photo, index) => {
     currentPhotoIndex = index;
     return photo.id === photoId;
   });
-  console.log(currentPhoto);
-  console.log(currentPhotoIndex);
 
   // SET IMAGE IN MODAL
   modalImg.src = currentPhoto.urls.regular;
@@ -112,7 +109,6 @@ async function getPhotos() {
 
   // push new images that we got from API to allPhotos array
   allPhotos.push(...photos);
-  console.log(allPhotos);
 
   // add new images to DOM
   photos.forEach((photo, i) => {
